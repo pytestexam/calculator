@@ -56,12 +56,3 @@ class Tests(unittest.TestCase):
 
     def test_bshr(self):
         self.assertEqual(calc.bshr(9, 1), 4)
-
-
-
-
-
-
-
-
-
