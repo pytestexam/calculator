@@ -1,0 +1,22 @@
+Test design
+
+Additional considerable test cases:
+
+multi-user testing - is the application able to run in multiple instances in the same time?
+
+input validation (especially on GUI applications) - are unicode/noncharacter strings or 
+alphanumeric characters accepted as inputs?
+
+performance - the speed of calculation, response time
+related to this: 
+static analysis / static review testing of the code to see if the correct data types have been used for the mathematic operations to avoid memory leaks, high CPU or memory consumption
+
+portability - are multiple platforms supported, e.g.: Windows, Macintosh or mobile platforms?
+
+usability - is it from users perspective to convenient to use the application?
+
+stress - running high amount of automated tests to see the application behavior
+
+internalization - to see if the application can load supported language translations upon users choice and translated content appears as expected.
+
+regional - OS time/date and regional settings can affect the display of digits and separators

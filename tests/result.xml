@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="5" skipped="0" tests="13" time="0.142" timestamp="2023-02-07T16:59:31.209838" hostname="HU01-69JV2J3"><testcase classname="test_calc.Tests" name="test_addition" time="0.001" /><testcase classname="test_calc.Tests" name="test_band" time="0.001" /><testcase classname="test_calc.Tests" name="test_bnot" time="0.001"><failure message="AssertionError: 9 != -10">self = &lt;tests.test_calc.Tests testMethod=test_bnot&gt;
+
+    def test_bnot(self):
+&gt;       self.assertEqual(calc.bnot(9), -10)
+E       AssertionError: 9 != -10
+
+test_calc.py:53: AssertionError</failure></testcase><testcase classname="test_calc.Tests" name="test_bor" time="0.000" /><testcase classname="test_calc.Tests" name="test_bshl" time="0.001"><failure message="AssertionError: 4 != 18">self = &lt;tests.test_calc.Tests testMethod=test_bshl&gt;
+
+    def test_bshl(self):
+&gt;       self.assertEqual(calc.bshl(9, 1), 18)
+E       AssertionError: 4 != 18
+
+test_calc.py:56: AssertionError</failure></testcase><testcase classname="test_calc.Tests" name="test_bshr" time="0.000"><failure message="AssertionError: 18 != 4">self = &lt;tests.test_calc.Tests testMethod=test_bshr&gt;
+
+    def test_bshr(self):
+&gt;       self.assertEqual(calc.bshr(9, 1), 4)
+E       AssertionError: 18 != 4
+
+test_calc.py:59: AssertionError</failure></testcase><testcase classname="test_calc.Tests" name="test_bxor" time="0.000" /><testcase classname="test_calc.Tests" name="test_checksum" time="0.000" /><testcase classname="test_calc.Tests" name="test_division" time="0.000"><failure message="ZeroDivisionError: division by zero">self = &lt;tests.test_calc.Tests testMethod=test_division&gt;
+
+    def test_division(self):
+        self.assertEqual(calc.div(42, 6), 7)
+&gt;       self.assertRaises(ZeroDivisionError, calc.div(42, 0))
+
+test_calc.py:30: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;calculator.Calculator object at 0x000002A33D372B80&gt;, a = 42, b = 0
+
+    def div(self, a, b):
+&gt;       return a / b
+E       ZeroDivisionError: division by zero
+
+..\calculator.py:24: ZeroDivisionError</failure></testcase><testcase classname="test_calc.Tests" name="test_multiplication" time="0.001" /><testcase classname="test_calc.Tests" name="test_remainder" time="0.001"><failure message="ZeroDivisionError: integer division or modulo by zero">self = &lt;tests.test_calc.Tests testMethod=test_remainder&gt;
+
+    def test_remainder(self):
+        self.assertEqual(calc.rem(23, 5), 3)
+&gt;       self.assertRaises(ZeroDivisionError, calc.rem(42, 0))
+
+test_calc.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;calculator.Calculator object at 0x000002A33D372B80&gt;, a = 42, b = 0
+
+    def rem(self, a, b):
+&gt;       return a % b
+E       ZeroDivisionError: integer division or modulo by zero
+
+..\calculator.py:27: ZeroDivisionError</failure></testcase><testcase classname="test_calc.Tests" name="test_squareroot" time="0.000" /><testcase classname="test_calc.Tests" name="test_substraction" time="0.001" /></testsuite></testsuites>

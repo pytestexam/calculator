@@ -1,0 +1,58 @@
+C:\Users\drj6711\PycharmProjects\pythonProject\venv\Scripts\python.exe C:/Users/drj6711/PycharmProjects/pythonProject/icalc.py
+Welcome to the Commsignia InteractiveCalculatorPro 2022.   Type help or ? to list commands.
+
+(icalc) add 3 5
+8
+(icalc) sub 8 1
+7
+(icalc) sub 2 -4
+6
+(icalc) sub -7 1
+-8
+(icalc) mul 2 3
+6
+(icalc) div 8 4
+0
+(icalc) rem 8 4
+2.0
+(icalc) sqrt 9
+Traceback (most recent call last):
+  File "C:/Users/drj6711/PycharmProjects/pythonProject/icalc.py", line 71, in <module>
+    InteractiveCalculator().cmdloop()
+  File "C:\Users\drj6711\AppData\Local\Programs\Python\Python38\lib\cmd.py", line 138, in cmdloop
+    stop = self.onecmd(line)
+  File "C:\Users\drj6711\AppData\Local\Programs\Python\Python38\lib\cmd.py", line 217, in onecmd
+    return func(arg)
+  File "C:/Users/drj6711/PycharmProjects/pythonProject/icalc.py", line 35, in do_sqrt
+    print(self.cal.sub(*parse(arg)))
+TypeError: sub() missing 1 required positional argument: 'b'
+
+Process finished with exit code 1
+
+C:\Users\drj6711\PycharmProjects\pythonProject\venv\Scripts\python.exe C:/Users/drj6711/PycharmProjects/pythonProject/icalc.py
+Welcome to the Commsignia InteractiveCalculatorPro 2022.   Type help or ? to list commands.
+
+(icalc) sqrt 9 3
+6
+(icalc) bit_and 7 9
+1
+(icalc) bit_or 5 6
+(icalc) bit_xor 3 1
+2
+(icalc) bit_not 9
+9
+(icalc) bit_shift_left 9 1
+18
+(icalc) bit_shift_right 9 1
+Traceback (most recent call last):
+  File "C:/Users/drj6711/PycharmProjects/pythonProject/icalc.py", line 71, in <module>
+    InteractiveCalculator().cmdloop()
+  File "C:\Users\drj6711\AppData\Local\Programs\Python\Python38\lib\cmd.py", line 138, in cmdloop
+    stop = self.onecmd(line)
+  File "C:\Users\drj6711\AppData\Local\Programs\Python\Python38\lib\cmd.py", line 217, in onecmd
+    return func(arg)
+  File "C:/Users/drj6711/PycharmProjects/pythonProject/icalc.py", line 59, in do_bit_shift_right
+    print(self.cal.bshl(*parse(arg)))
+NameError: name 'arg' is not defined
+
+Process finished with exit code 1
